@@ -1,0 +1,28 @@
+{
+  "name": "electrical-engineer-app",
+  "version": "1.0.0",
+  "description": "Electrical Engineer Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.engineer.tools",
+    "productName": "Engineer Tools",
+    "win": {
+      "target": "nsis",
+      "icon": "icon-512.png"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "dependencies": {
+    "electron-updater": "^6.7.3"
+  }
+}
